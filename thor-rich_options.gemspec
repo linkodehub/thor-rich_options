@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["satoyama@linkode.co.jp"]
 
   spec.summary       = %q{Rich Options for Thor}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.description   = %q{Rich Options by exclusive and at_least_one method for thor library}
   spec.homepage      = "https://github.com/linkodehub/thor-rich_options"
   spec.license       = "MIT"
 
