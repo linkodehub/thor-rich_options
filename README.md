@@ -1,5 +1,7 @@
 # Thor::RichOptions
 
+[![Gem Version](https://badge.fury.io/rb/thor-rich_options.svg)](https://badge.fury.io/rb/thor-rich_options)
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/thor/rich_options`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 This gem provides new features for option of [thor](https://github.com/erikhuda/thor) library by `exclusive` and `at_least_one` method.
