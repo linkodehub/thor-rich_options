@@ -47,6 +47,7 @@ class Thor
         opts = []
         opts  = command.method_exclusive_option_names unless command.nil?
         opts += class_exclusive_option_names
+        opts.select!{ |names| names.none?{ |name| class_options[name].hide } }
         unless opts.empty?
           shell.say "Exclusive Options:"
           shell.print_table(opts.map{ |ex| ex.map{ |e| "--#{e}"}}, :indent => 2 )

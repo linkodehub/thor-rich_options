@@ -58,6 +58,7 @@ class Thor
         opts = []
         opts = command.method_at_least_one_option_names unless command.nil?
         opts += class_at_least_one_option_names
+        opts.select!{ |names| names.none?{ |name| class_options[name].hide } }
         unless opts.empty?
           shell.say "Required At Least One:"
           shell.print_table(opts.map{ |ex| ex.map{ |e| "--#{e}"}}, :indent => 2 )
